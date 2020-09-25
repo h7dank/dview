@@ -1,7 +1,7 @@
 # dview
 
 ## Usage
-npm install --save-dev
+npm install --save-dev dview
 
 ```
     import Vue from 'vue';

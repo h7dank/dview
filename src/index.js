@@ -29,5 +29,6 @@ const API = {
     ...components
 };
 
-module.exports.default = module.exports = API; 
+// module.exports.default = module.exports = API; 
+export default API;
 

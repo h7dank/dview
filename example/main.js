@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import App from './APP.vue'
 import '@/styles/index.scss'
-import '../dist/dview.js'
+import dview from  '../dist/dview.js'
 
 Vue.config.debug = true
+
+Vue.use(dview)
 
 new Vue({
     render: h => h(App)

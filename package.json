@@ -2,7 +2,7 @@
   "name": "dview",
   "version": "0.1.7",
   "private": false,
-  "main": "dist/main.js",
+  "main": "dist/dview.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "dev:dist": "webpack --config build/webpack.dist.dev.config.js &&  gulp --gulpfile build/build-style.js",

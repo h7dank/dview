@@ -2941,7 +2941,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! exports provided: default */
+/*! no exports provided */
 /*! ModuleConcatenation bailout: Module uses injected variables (module) */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2988,8 +2988,7 @@ var API = Object(E_20181113_Github_dview_node_modules_babel_runtime_helpers_esm_
   install: install
 }, components);
 
-module.exports.default = API;
-/* harmony default export */ __webpack_exports__["default"] = (API); // eslint-disable-line no-undef
+module.exports.default = module.exports = API;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ })

@@ -1,0 +1,108 @@
+@mixin button-size($padding, $font-size, $border-radius) {
+    padding: $padding;
+    font-size: $font-size;
+    border-radius: $border-radius;
+}
+
+@mixin active-btn-color($color) {
+    &:focus {
+        box-shadow: 0 0 0 2px fade($color, 20%);
+    }
+}
+
+@mixin btn-color($color) {
+    @include button-variant($btn-primary-color, $color, $color);
+
+    &:hover,
+    &:active,
+    &.active {
+        color: $btn-primary-color;
+    }
+
+    @include active-btn-color($color);
+}
+
+@mixin button-color($color, $background, $border) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+}
+
+@mixin button-variant($color, $background, $border) {
+    @include button-color($color, $background, $border);
+
+    &:hover{
+        @include button-color(lighten($color, 20%), lighten($background, 20%), lighten($border, 20%));
+    }
+    &:active,
+    &.active{
+        @include button-color(darken($color, 5%), darken($background, 5%), darken($border, 5%));
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &,
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            @include button-color($btn-disable-color, $btn-disable-bg, $btn-disable-border);
+        }
+    }
+}
+
+@mixin btn() {
+    display: inline-block;
+    font-weight: $btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: $line-height-base;
+    user-select: none;
+    transform: translateZ(0);
+    @include button-size($btn-padding-base, $btn-font-size, $btn-border-radius);
+    transition: color $transition-time linear, background-color $transition-time linear, border $transition-time linear, box-shadow $transition-time linear;
+
+
+    &,
+    &:active,
+    &:focus {
+        outline: 0;
+    }
+
+    &.disabled,
+    &[disabled] {
+        cursor: $cursor-disabled;
+        > * {
+            pointer-events: none;
+        }
+    }
+}
+
+@mixin btn-default() {
+    @include button-variant($btn-defalut-color, $btn-default-bg, $btn-default-border);
+    &:hover{
+        @include button-color(lighten($primary-color, 20%), #fff, lighten($primary-color, 20%));
+    }
+    &:active,
+    &.active {
+        @include button-color(darken($primary-color, 5%), #fff, darken($primary-color, 5%));
+    }
+    @include active-btn-color($primary-color);
+}
+
+@mixin btn-primary() {
+    @include button-variant($btn-primary-color, $btn-primary-bg, $primary-color);
+
+    &:hover,
+    &:active,
+    &.active {
+        color: $btn-primary-color;
+    }
+    @include active-btn-color($primary-color);
+}

@@ -1,0 +1,38 @@
+// Prefix
+$css-prev: dvu-;
+
+// Color
+$primary-color: #2d8cf0;
+$info-color: #2db7f5;
+$success-color: #19be6b;
+$warning-color: #ff9900;
+$error-color: #ed4014;
+
+// Base
+$line-height-base: 1.5;
+$text-color: #515a6e;
+$cursor-disabled: not-allowed;
+
+$border-color-base: #dcdee2;
+
+$background-color-base: #f7f7f7;
+
+// Button
+$btn-font-weight: normal;
+$btn-padding-base: 5px 15px 6px;
+$btn-font-size: 12px;
+$btn-border-radius: 4px;
+
+$btn-defalut-color: $text-color;
+$btn-default-bg: #fff;
+$btn-default-border: $border-color-base;
+
+$btn-disable-color: #c5c8ce;
+$btn-disable-bg: $background-color-base;
+$btn-disable-border: $border-color-base;
+
+$btn-primary-color: #fff;
+$btn-primary-bg: $primary-color;
+
+// Animation
+$transition-time: 0.2s;

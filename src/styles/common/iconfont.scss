@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "dvu-icon";
+    src: url("/src/styles/common/iconfont/iconfont.eot"); /* IE9 */
+    src: url("/src/styles/common/iconfont/iconfont.eot?t=1598608759105#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+            url(
+                "data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMsAAsAAAAAB3gAAALeAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqCUIIcATYCJAMICwYABCAFhR0HMRtzBiMRJmsvSfbPw9gxkTSBEenEV6Km2Xn7v6IumUhnPwfPf3a8983MF1D+UnSsDuRuG0A12MV10uXs5mbVNSrCMCXnwf/yHelihAthfABkjpv8xDX1a4RfALbIxMgG2vlACqQTaERRuIHxhrELXMJpCOBJLNlI6VjbijsGa5IAMpsnhnDPKTAtkYI7gmvNSoPswgV3tVm9QbEzvL/8oRd3ULhorJjG8bJRCr+zffQGZwO9PgBzPh3A1oEGsgED0lprqEfHzmw0nprTkAj7ihT4znF8xm7/eCAgrljh3gBEQ8Y9MV3Wrf5SAWAAd2ASWDHKCu4+Ftfb/tw713/1lkvhHL681Y6SI1bvucyG6QNXLm0Iadt/NezgydAxwLWJz6IjVqrnORl1OcXroj0/XrjRmm3dd+zy1bCOgyetLRNbQ2vogWvBFUs2hOw/H6/bgsaVrUKq3xx4OT63U1Lia2UlvFm+/LW8fLN9aui1PkzBZX32Bh1PCVbj8XZ8NzrWbMhLqLDfjnvLl9/xr0r4sHo1daQtDQi8XbAd/yQv6fqEu2NsFwoBcCz9Vv/+/Xfoe7IBv9y/7l4GgE/9Wx7aHMvQzwTud2gU+NPMnjVGZ1tKZVRmrVcxifsbZHjiCThgSyBfx0pCXssreBPyciY3ElKeRqJ0CBpKDuqCF4WoK97UoJ5k0bHeiyA2acR4AJnsB6gQzn1U4cs7VBPON9BQ/qMuhEoI6kq4ZKGetMvbkh29SJXDuoTRCHqwf8iOtuBEiB697kpt98J4LoaLefiaH/KRaYOubqs8E27Ic845rtiLBAhMK4wt5+GyEOxMBZ3USWQfmibUXah2tCpNCaMR9ID9A9nRFvxbi2b0uiv98V4Yz8Vwj5Iw+Yd80FnvgI6atic4CbbeBffKO2C/2CMSAKQzrcA4ToeL7SRgrx9W0ElNGmHfBxrUKPQV1OuL1q/eAnhiSZXYAzVus2R83qJSAAA="
+            )
+            format("woff2"),
+        url("/src/styles/common/iconfont/iconfont.woff?t=1598608759105") format("woff"),
+        url("/src/styles/common/iconfont/iconfont.ttf?t=1598608759105") format("truetype"),
+        /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+            url("/src/styles/common/iconfont/iconfont.svg?t=1598608759105#dvw-iconfont") format("svg"); /* iOS 4.1- */
+}
+
+.dvu-icon {
+    display: inline-block;
+    font-family: "dvu-icon" !important;
+    font-style: normal;
+    speak: none;
+    // vertical-align: middle;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dvu-icon-loading:before {
+    content: "\e639";
+}

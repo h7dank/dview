@@ -1,0 +1,16 @@
+{
+  "id": "2034339",
+  "name": "DView",
+  "font_family": "dvw-iconfont",
+  "css_prefix_text": "dvw-icon",
+  "description": "UI framework",
+  "glyphs": [
+    {
+      "icon_id": "11349096",
+      "name": "loading",
+      "font_class": "loading",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    }
+  ]
+}

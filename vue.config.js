@@ -17,6 +17,7 @@ module.exports = {
         config.resolve.alias = alias
         if (process.env.NODE_ENV === 'production') {
             config.entry = './src/index.js'
+            config.output.filename = '[name].js'
         } else {
             const entry = {
                 app: ['./example/main.js']

@@ -5,10 +5,10 @@
     </div>
 </template>
 <script>
-import dButton from '../src/components/button'
+// import dButton from '../src/components/button'
 export default {
     components: {
-        dButton
+        // dButton
     }
 }
 </script>

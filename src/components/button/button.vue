@@ -5,8 +5,8 @@
     </component>
 </template>
 <script>
-import { oneOf } from '@/utils/assist'
-import Icon from '@/components/icon/icon';
+import { oneOf } from '../../utils/assist'
+import Icon from '../icon/icon';
 
 const prefixCls = 'dvu-btn'
 

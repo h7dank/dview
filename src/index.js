@@ -29,5 +29,6 @@ const API = {
     ...components
 };
 
+module.exports.default = API
 export default API;  // eslint-disable-line no-undef
 

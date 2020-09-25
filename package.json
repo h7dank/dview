@@ -5,6 +5,7 @@
   "main": "dist/main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
+    "dev:dist": "webpack --config build/webpack.dist.dev.config.js &&  gulp --gulpfile build/build-style.js",
     "build": "vue-cli-service build && gulp --gulpfile build/build-style.js",
     "lint": "vue-cli-service lint"
   },
@@ -21,6 +22,7 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "css-loader": "^4.3.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "gulp": "^4.0.2",
@@ -28,8 +30,12 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-loader": "^15.9.3",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.1.4"
   }
 }

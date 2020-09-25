@@ -9,7 +9,6 @@ module.exports = {
     outputDir: process.env.NODE_ENV === 'production' ? path.resolve(__dirname, 'dist') : path.resolve(__dirname, '/example/dist'),
     publicPath: process.env.NODE_ENV === 'production' ? '/dist/' : '/example',
     configureWebpack: config => {
-        console.log('config', config)
         const alias = {
             "~": resolve('example'),
             '@': resolve('src')
@@ -19,6 +18,7 @@ module.exports = {
             config.entry = './src/index.js'
             config.output.filename = 'dview.min.js'
             config.output.library = 'dview'
+            config.optimization.splitChunks = {}
         } else {
             const entry = {
                 app: ['./example/main.js']

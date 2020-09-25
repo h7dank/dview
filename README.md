@@ -1,24 +1,13 @@
 # dview
 
-## Project setup
-```
-npm install
-```
+## Usage
+npm install --save-dev
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
-```
+    import Vue from 'vue';
+    import dview from 'dview';
 
-### Compiles and minifies for production
-```
-npm run build
-```
+    import 'dview/styles/dview.css'
 
-### Lints and fixes files
+    Vue.use(dview);
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

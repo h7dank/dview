@@ -11,12 +11,14 @@ const dView = {
     dButton: Button
 }
 
+console.log('windwo', window.Vue)
 const install = function(Vue, opts = {}) {
     if (install.installed) return
-
+    console.log('install')
     console.debug(opts)
 
     Object.keys(dView).forEach(key => {
+        console.log('dview key', key, dView[key])
         Vue.component(key, dView[key])
     })
 

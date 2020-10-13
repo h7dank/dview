@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './APP.vue'
 import '@/styles/index.scss'
-import dview from  '../dist/dview.js'
+import dview from  '@/index'
 
 Vue.config.debug = true
 

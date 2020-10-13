@@ -12,8 +12,10 @@ const dView = {
 }
 
 const install = function(Vue, opts = {}) {
+    if (opts) {
+        console.log(opts)
+    }
     // if (install.installed) return
-    console.log(opts)
     Object.keys(dView).forEach(key => {
         Vue.component(key, dView[key])
     })

@@ -6,7 +6,12 @@
         <d-button type="warning">warning</d-button>
         <d-button type="info">info</d-button>
         <d-button type="error">error</d-button>
-        <d-button loading="loading">loading</d-button>
+        <br>
+        <d-button type="success" loading>success</d-button>
+        <d-button type="primary" loading>primary</d-button>
+        <d-button type="warning" loading>warning</d-button>
+        <d-button type="info" loading>info</d-button>
+        <d-button type="error" loading>error</d-button>
     </div>
 </template>
 <script>
